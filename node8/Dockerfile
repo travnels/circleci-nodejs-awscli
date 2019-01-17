@@ -1,4 +1,4 @@
-FROM circleci/node:8.11
+FROM circleci/node:8.15
 
 USER root
 
@@ -7,5 +7,10 @@ RUN apt-get update && \
     pip install --upgrade awscli
 
 RUN npm i npm@latest -g
+
+RUN node -v
+RUN npm -v
+RUN python --version
+RUN aws --version
 
 USER circleci
