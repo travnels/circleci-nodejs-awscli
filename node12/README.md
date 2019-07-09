@@ -2,7 +2,7 @@
 
 ### Intro
 This image is based on [CircleCI's NodeJS image](https://hub.docker.com/r/circleci/node/). Packages include
-- Node: 10.16.0
+- Node: 12.6.0
 - NPM: 6.10.0
 - Python: 2.7.13
 - AWS CLI: 1.16.195
@@ -11,26 +11,26 @@ This image is based on [CircleCI's NodeJS image](https://hub.docker.com/r/circle
 ```
 git clone https://github.com/travnels/circleci-nodejs-awscli
 cd circleci-nodejs-awscli
-docker build -t travnels/circleci-nodejs-awscli:node10 .
+docker build -t travnels/circleci-nodejs-awscli:node12 .
 ```
 
 ### Push to Docker Hub
 ```
-docker push travnels/circleci-nodejs-awscli:node10
+docker push travnels/circleci-nodejs-awscli:node12
 ```
 
 ### Pull from Docker Hub
 ```
-docker pull travnels/circleci-nodejs-awscli:node10
+docker pull travnels/circleci-nodejs-awscli:node12
 ```
 
 ### Run image
 ```
-docker run -it travnels/circleci-nodejs-awscli:node10 bash
+docker run -it travnels/circleci-nodejs-awscli:node12 bash
 ```
 
 ### Use in CircleCI
 ```
 docker:
-    - image: travnels/circleci-nodejs-awscli:node10
+    - image: travnels/circleci-nodejs-awscli:node12
 ```

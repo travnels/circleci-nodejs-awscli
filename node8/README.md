@@ -2,10 +2,10 @@
 
 ### Intro
 This image is based on [CircleCI's NodeJS image](https://hub.docker.com/r/circleci/node/). Packages include
-- Node: 8.15.0
-- NPM: 6.5.0
+- Node: 8.16.0
+- NPM: 6.10.0
 - Python: 2.7.13
-- AWS CLI: 1.16.90
+- AWS CLI: 1.16.195
 
 ### Build image
 ```
